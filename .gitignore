@@ -1,2 +1,6 @@
 # ignore files ending with csv
+<<<<<<< HEAD
 *.csv
+=======
+*.csv
+>>>>>>> docs: adding gitignore file
