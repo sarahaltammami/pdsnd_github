@@ -1,6 +1,10 @@
 # ignore files ending with csv
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.csv
+=======
+*.csv
+>>>>>>> docs: adding gitignore file
 =======
 *.csv
 >>>>>>> docs: adding gitignore file
