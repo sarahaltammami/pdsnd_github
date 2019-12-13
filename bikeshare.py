@@ -164,11 +164,11 @@ def user_stats(df, city):
         earliest_birth = df['Birth Year'].min()
         print(earliest_birth)
         print("is the earliest birth")
-        most_recent_birth = df['Birth Year'].max()
-        print(most_recent_birth)
+        mrb= df['Birth Year'].max()
+        print(mrb)
         print("is the most recent birth")
-        most_common_birth = df['Birth Year'].mode()[0]
-        print(most_common_birth)
+        mcb = df['Birth Year'].mode()[0]
+        print(mcb)
         print("is the most common birth: {}\n")
 
 
