@@ -9,7 +9,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> refactoring
 
     Returns:
         (str) city - name of the city to analyze
@@ -22,7 +26,11 @@ def get_filters():
     while 1:
         if city in CITY_DATA :
             break;
+<<<<<<< HEAD
         city = input('Please choose one of the three cities').lower()     
+=======
+        city = input('Please choose one of the three cities').lower()
+>>>>>>> refactoring
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input('kindly specify a month:').lower()
@@ -33,7 +41,10 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refactoring
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -71,7 +82,10 @@ def load_data(city, month, day):
 
     return df
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refactoring
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -96,7 +110,10 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refactoring
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -106,12 +123,20 @@ def station_stats(df):
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
     print(common_start_station)
+<<<<<<< HEAD
     print("is the most commonly used start station")
+=======
+    print("is the most commonly used start station in this city")
+>>>>>>> refactoring
 
     # TO DO: display most commonly used end station
     common_end_station = df['End Station'].mode()[0]
     print(common_end_station)
+<<<<<<< HEAD
     print("is the most commonly used end station")
+=======
+    print("is the most commonly used end station in this city")
+>>>>>>> refactoring
 
     # TO DO: display most frequent combination of start station and end station trip
     frequent_combination = (df['Start Station'] + "||" + df['End Station']).mode()[0]
@@ -160,10 +185,15 @@ def user_stats(df, city):
         print(str(gender))
         print("Is the count of user gender")
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refactoring
     # TO DO: Display earliest, most recent, and most common year of birth
         earliest_birth = df['Birth Year'].min()
         print(earliest_birth)
         print("is the earliest birth")
+<<<<<<< HEAD
         most_recent_birth = df['Birth Year'].max()
         print(most_recent_birth)
         print("is the most recent birth")
@@ -172,6 +202,17 @@ def user_stats(df, city):
         print("is the most common birth: {}\n")
 
 
+=======
+        mrb= df['Birth Year'].max()
+        print(mrb)
+        print("is the most recent birth")
+        mcb = df['Birth Year'].mode()[0]
+        print(mcb)
+        print("is the most common birth: {}\n")
+
+
+
+>>>>>>> refactoring
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -186,7 +227,11 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df, city)
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> refactoring
         #Raw data
         question = input("\nDo you like to see more data? Type yes or no.\n")
         while question=='yes':

@@ -1,6 +1,7 @@
 # ignore files ending with csv
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.csv
 =======
 *.csv
@@ -8,3 +9,6 @@
 =======
 *.csv
 >>>>>>> docs: adding gitignore file
+=======
+*.csv
+>>>>>>> refactoring
