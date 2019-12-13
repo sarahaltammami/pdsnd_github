@@ -22,7 +22,7 @@ User information
 ### Datasets
 The datasets used for this script contain bike share data for the first six months of 2017. You can access the original data files here Chicago, New York City, Washington. Some data wrangling, to reduce columns and reformat, has been performed to condense these files to the core six columns used in this project. This makes the analysis and the evaluation in this project more straightforward.
 
-The data is provided by Motivate, which is a bike share system provider for many cities in the United States. The data files for all three cities contain the same six columns:
+The data files for all three cities contain the same six columns:
 1- Start Time
 2- End Time
 3- Trip Duration (in seconds)
