@@ -6,18 +6,18 @@ In this project, I will explore data related to bike share systems for three maj
 
 ### Questions answered
 Popular times of travel
-What is the most popular month for start time?
-What is the most popular day of week (Monday, Tuesday, etc.) for start time?
-What is the most popular hour of day for start time?
+1- What is the most popular month for start time?
+2- What is the most popular day of week (Monday, Tuesday, etc.) for start time?
+3- What is the most popular hour of day for start time?
 Popular stations and trip
-What is the most popular start station and most popular end station?
-What is the most popular trip?
+1- What is the most popular start station and most popular end station?
+2- What is the most popular trip?
 Trip duration
 What is the total trip duration and average trip duration?
 User information
-What are the counts of each user type?
-What are the counts of gender? (only available for NYC and Chicago)
-What are the earliest (i.e. oldest person), most recent (i.e. youngest person), and most popular birth years?
+1- What are the counts of each user type?
+2- What are the counts of gender? (only available for NYC and Chicago)
+3- What are the earliest (i.e. oldest person), most recent (i.e. youngest person), and most popular birth years?
 
 ### Datasets
 The datasets used for this script contain bike share data for the first six months of 2017. You can access the original data files here Chicago, New York City, Washington. Some data wrangling, to reduce columns and reformat, has been performed to condense these files to the core six columns used in this project. This makes the analysis and the evaluation in this project more straightforward.
