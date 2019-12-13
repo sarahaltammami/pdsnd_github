@@ -9,7 +9,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-    
+
 
     Returns:
         (str) city - name of the city to analyze
@@ -22,7 +22,7 @@ def get_filters():
     while 1:
         if city in CITY_DATA :
             break;
-        city = input('Please choose one of the three cities').lower()     
+        city = input('Please choose one of the three cities').lower()
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input('kindly specify a month:').lower()
@@ -106,12 +106,12 @@ def station_stats(df):
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
     print(common_start_station)
-    print("is the most commonly used start station")
+    print("is the most commonly used start station in this city")
 
     # TO DO: display most commonly used end station
     common_end_station = df['End Station'].mode()[0]
     print(common_end_station)
-    print("is the most commonly used end station")
+    print("is the most commonly used end station in this city")
 
     # TO DO: display most frequent combination of start station and end station trip
     frequent_combination = (df['Start Station'] + "||" + df['End Station']).mode()[0]
@@ -186,7 +186,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df, city)
-        
+
         #Raw data
         question = input("\nDo you like to see more data? Type yes or no.\n")
         while question=='yes':
