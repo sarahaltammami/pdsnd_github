@@ -160,6 +160,7 @@ def user_stats(df, city):
         print(str(gender))
         print("Is the count of user gender")
 
+
     # TO DO: Display earliest, most recent, and most common year of birth
         earliest_birth = df['Birth Year'].min()
         print(earliest_birth)
@@ -170,6 +171,7 @@ def user_stats(df, city):
         mcb = df['Birth Year'].mode()[0]
         print(mcb)
         print("is the most common birth: {}\n")
+
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
